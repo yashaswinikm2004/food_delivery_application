@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodExpress - Restaurants</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 80px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#fc8019;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#fc8019;
+}
+
+/* Hero */
+
+.hero{
+    height:300px;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column; 
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* Heading */
+
+.heading{
+    text-align:center;
+    margin:50px 0 35px;
+    font-size:34px;
+}
+
+/* Grid */
+
+.container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding-bottom:60px;
+}
+
+/* Card */
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:18px;
+}
+
+.content h2{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.info{
+    margin:8px 0;
+    font-size:15px;
+    color:#555;
+}
+
+.rating{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    padding:5px 14px;
+    border-radius:20px;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.status-open{
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+.status-close{
+    color:red;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    margin-top:18px;
+    padding:12px;
+    background:#fc8019;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e56b0a;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🍽 FoodExpress</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Restaurants</a></li>
+<li><a href="#">Offers</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.htlm">Signup</a></li>
+<li><a href="#">👤 Profile</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Discover India's Best Restaurants</h1>
+
+<p>Order delicious food from your favourite restaurants.</p>
+
+</section>
+
+<h1 class="heading">Popular Restaurants</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="/Images/meghana.png">
+<div class="content">
+<h2>Meghana Foods</h2>
+<p class="info"><b>🍽 Cuisine :</b> Biryani, North Indian</p>
+<p class="info"><b>⏱ Delivery :</b> 30 mins</p>
+<p class="info"><b>📍 Address :</b> Koramangala, Bengaluru</p>
+<div class="rating">⭐ 4.7</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Empire Restaurant</h2>
+<p class="info"><b>🍽 Cuisine :</b> Mughlai, Chinese</p>
+<p class="info"><b>⏱ Delivery :</b> 25 mins</p>
+<p class="info"><b>📍 Address :</b> Indiranagar, Bengaluru</p>
+<div class="rating">⭐ 4.5</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>A2B Restaurant</h2>
+<p class="info"><b>🍽 Cuisine :</b> South Indian</p>
+<p class="info"><b>⏱ Delivery :</b> 20 mins</p>
+<p class="info"><b>📍 Address :</b> Jayanagar, Bengaluru</p>
+<div class="rating">⭐ 4.8</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Paradise Biryani</h2>
+<p class="info"><b>🍽 Cuisine :</b> Hyderabadi</p>
+<p class="info"><b>⏱ Delivery :</b> 35 mins</p>
+<p class="info"><b>📍 Address :</b> Hyderabad</p>
+<div class="rating">⭐ 4.6</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Udupi Upahar</h2>
+<p class="info"><b>🍽 Cuisine :</b> South Indian</p>
+<p class="info"><b>⏱ Delivery :</b> 18 mins</p>
+<p class="info"><b>📍 Address :</b> Mysuru</p>
+<div class="rating">⭐ 4.9</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Truffles</h2>
+<p class="info"><b>🍽 Cuisine :</b> Fast Food</p>
+<p class="info"><b>⏱ Delivery :</b> 28 mins</p>
+<p class="info"><b>📍 Address :</b> Bengaluru</p>
+<div class="rating">⭐ 4.8</div>
+<p class="info"><b>Status :</b> <span class="status-close">Closed</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>CTR Bengaluru</h2>
+<p class="info"><b>🍽 Cuisine :</b> Breakfast</p>
+<p class="info"><b>⏱ Delivery :</b> 22 mins</p>
+<p class="info"><b>📍 Address :</b> Malleshwaram, Bengaluru</p>
+<div class="rating">⭐ 4.9</div>
+<p class="info"><b>Status :</b> <span class="status-open">Open</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Hotel RRR</h2>
+<p class="info"><b>🍽 Cuisine :</b> Andhra Meals</p>
+<p class="info"><b>⏱ Delivery :</b> 24 mins</p>
+<p class="info"><b>📍 Address :</b> Vijayawada</p>
+<div class="rating">⭐ 4.6</div>
+<p class="info"><b>Status :</b> <span class="status-open">Active</span></p>
+ <button>View Menu</button>
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 FoodExpress. All Rights Reserved.
+</footer>
+
+</body>
+</html>

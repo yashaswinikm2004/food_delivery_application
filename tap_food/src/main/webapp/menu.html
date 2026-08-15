@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#fc8019;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:18px;
+}
+
+.content h2{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.price{
+    color:#fc8019;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.rating{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    margin:10px 0;
+}
+
+.desc{
+    color:#555;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+button{
+    width:100%;
+    margin-top:18px;
+    padding:12px;
+    background:#fc8019;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#e56b0a;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+Restaurant Menu
+</header>
+
+<div class="container">
+
+<!-- Card 1 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Chicken Biryani</h2>
+<p class="price">₹250</p>
+<div class="rating">⭐ 4.8</div>
+<p class="desc">
+Aromatic basmati rice cooked with spicy chicken, herbs, and traditional Indian spices.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Masala Dosa</h2>
+<p class="price">₹120</p>
+<div class="rating">⭐ 4.7</div>
+<p class="desc">
+Crispy dosa filled with potato masala served with chutney and sambar.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 3 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Paneer Butter Masala</h2>
+<p class="price">₹220</p>
+<div class="rating">⭐ 4.6</div>
+<p class="desc">
+Soft paneer cubes cooked in rich tomato butter gravy.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 4 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Veg Pizza</h2>
+<p class="price">₹299</p>
+<div class="rating">⭐ 4.5</div>
+<p class="desc">
+Cheesy pizza loaded with fresh vegetables and mozzarella cheese.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 5 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Cheese Burger</h2>
+<p class="price">₹180</p>
+<div class="rating">⭐ 4.4</div>
+<p class="desc">
+Juicy burger with cheese, lettuce, tomato and crispy patty.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 6 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Veg Fried Rice</h2>
+<p class="price">₹170</p>
+<div class="rating">⭐ 4.5</div>
+<p class="desc">
+Chinese-style fried rice tossed with vegetables and sauces.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 7 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Chocolate Cake</h2>
+<p class="price">₹150</p>
+<div class="rating">⭐ 4.9</div>
+<p class="desc">
+Soft chocolate sponge layered with creamy chocolate frosting.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 8 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Mango Juice</h2>
+<p class="price">₹90</p>
+<div class="rating">⭐ 4.8</div>
+<p class="desc">
+Fresh mango juice prepared using naturally ripened mangoes.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+<!-- Card 9 -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80">
+<div class="content">
+<h2>Ice Cream Sundae</h2>
+<p class="price">₹140</p>
+<div class="rating">⭐ 4.9</div>
+<p class="desc">
+Vanilla ice cream topped with chocolate syrup and nuts.
+</p>
+<button>Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
